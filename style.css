@@ -1,41 +1,37 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
 .box {
-  width: 100%;
-  width: 1440px;
-  height: 3696px;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .box .desk-top {
-  /*position: fixed;*/
-  width: 100%;
-  width: 1440px;
-  height: 3696px;
-  top: 0;
-  left: 0;
+  position: fixed;
+  inset: 0;
 }
 
 .box .overlap {
   position: relative;
   width: 100%;
-  width: 1442px;
-  height: 3696px;
+  min-height: 100vh;
 }
 
 .box .body {
   position: absolute;
-  width: 100%;
-  width: 1440px;
-  height: 3695px;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  overflow: hidden;
+  inset: 0;
+  background: #fff;
 }
 
 .box .performer {
   position: absolute;
-  width: 100%;
-  width: 1122px;
-  height: 535px;
+  width: 100vw;
+  height: 100vh;
   top: 2475px;
   left: 160px;
 }
@@ -303,14 +299,14 @@
   line-height: normal;
 }
 
- .box .info {
+.box .info {
   position: absolute;
   width: 100%;
   width: 1122px;
   height: 335px;
   top: 1180px;
   left: 160px;
-} 
+}
 
 .box .overlap-2 {
   position: relative;
